@@ -1,4 +1,7 @@
 fun main() {
-    println("A here enters teh town of Krondstadt. What is their name?")
+    narrate("A here enters the town of Krondstadt. What is their name?")
     val heroName = readLine() ?: ""
+
+    changeNarratorMood()
+    narrate("$heroName heads to the town square")
 }
